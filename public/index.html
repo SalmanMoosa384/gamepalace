@@ -5,39 +5,141 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+   
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+   
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,400i,700%7cMarcellus+SC" rel="stylesheet">
+
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+ 
+     <!-- FontAwesome -->
+     <script defer src="/assets/vendor/fontawesome-free/js/all.js"></script>
+     <script defer src="/assets/vendor/fontawesome-free/js/v4-shims.js"></script>
+ 
+     <!-- IonIcons -->
+     <link rel="stylesheet" href="/assets/vendor/ionicons/css/ionicons.min.css">
+ 
+     <!-- Revolution Slider -->
+     <link rel="stylesheet" href="/assets/vendor/revolution/css/settings.css">
+     <link rel="stylesheet" href="/assets/vendor/revolution/css/layers.css">
+     <link rel="stylesheet" href="/assets/vendor/revolution/css/navigation.css">
+ 
+     <!-- Flickity -->
+     <link rel="stylesheet" href="/assets/vendor/flickity/dist/flickity.min.css">
+ 
+     <!-- Photoswipe -->
+     <link rel="stylesheet" href="/assets/vendor/photoswipe/dist/photoswipe.css">
+     <link rel="stylesheet" href="/assets/vendor/photoswipe/dist/default-skin/default-skin.css">
+ 
+     <!-- DateTimePicker -->
+     <link rel="stylesheet" href="/assets/vendor/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+ 
+     <!-- Summernote -->
+     <link rel="stylesheet" href="/assets/vendor/summernote/dist/summernote-bs4.css">
+ 
+     <!-- GODLIKE -->
+     <link rel="stylesheet" href="/assets/css/godlike.css">
+ 
+     <!-- Custom Styles -->
+     <link rel="stylesheet" href="/assets/css/custom.css">
+     
+     <!-- END: Styles -->
+ 
+     <!-- jQuery -->
+     <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+
+
+    <title>Game Palace</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root" class="nk-main"></div>
+  
+    
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  
+<!-- START: Scripts -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+<!-- Object Fit Polyfill -->
+<script defer src="/assets/vendor/object-fit-images/dist/ofi.min.js"></script>
+
+<!-- GSAP -->
+<script defer src="/assets/vendor/gsap/src/minified/TweenMax.min.js"></script>
+<script defer src="/assets/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+
+<!-- Popper -->
+<script defer src="/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap -->
+<script defer src="/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Sticky Kit -->
+<script defer src="/assets/vendor/sticky-kit/dist/sticky-kit.min.js"></script>
+
+<!-- Jarallax -->
+<script defer src="/assets/vendor/jarallax/dist/jarallax.min.js"></script>
+<script defer src="/assets/vendor/jarallax/dist/jarallax-video.min.js"></script>
+
+<!-- imagesLoaded -->
+<script defer src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+<!-- Flickity -->
+<script defer src="/assets/vendor/flickity/dist/flickity.pkgd.min.js"></script>
+
+<!-- Isotope -->
+<script defer src="/assets/vendor/isotope-layout/dist/isotope.pkgd.min.js"></script>
+
+<!-- Photoswipe -->
+<script defer src="/assets/vendor/photoswipe/dist/photoswipe.min.js"></script>
+<script defer src="/assets/vendor/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+<!-- Typed.js -->
+<script defer src="/assets/vendor/typed.js/lib/typed.min.js"></script>
+
+<!-- Jquery Validation -->
+<script defer src="/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+<!-- Jquery Countdown + Moment -->
+<script defer src="/assets/vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+<script defer src="/assets/vendor/moment/min/moment.min.js"></script>
+<script defer src="/assets/vendor/moment-timezone/builds/moment-timezone-with-data.min.js"></script>
+
+<!-- Hammer.js -->
+<script defer src="/assets/vendor/hammerjs/hammer.min.js"></script>
+
+<!-- NanoSroller -->
+<script defer src="/assets/vendor/nanoscroller/bin/javascripts/jquery.nanoscroller.js"></script>
+
+<!-- SoundManager2 -->
+<script defer src="/assets/vendor/soundmanager2/script/soundmanager2-nodebug-jsmin.js"></script>
+
+<!-- DateTimePicker -->
+<script defer src="/assets/vendor/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+
+<!-- Revolution Slider -->
+<script defer src="/assets/vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script defer src="/assets/vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script defer src="/assets/vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script defer src="/assets/vendor/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script defer src="/assets/vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+
+<!-- Keymaster -->
+<script defer src="/assets/vendor/keymaster/keymaster.js"></script>
+
+<!-- Summernote -->
+<script defer src="/assets/vendor/summernote/dist/summernote-bs4.min.js"></script>
+
+<!-- GODLIKE -->
+<script defer src="/assets/js/godlike.js"></script>
+<script defer src="/assets/js/godlike-init.js"></script>
+
+<!-- END: Scripts -->
   </body>
+
+
+
 </html>
