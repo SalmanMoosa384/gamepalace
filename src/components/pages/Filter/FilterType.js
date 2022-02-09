@@ -42,7 +42,7 @@ const FilterType = () => {
                   <>
                     {types.filter.data.results.map((r) => {
                       return (
-                        <Link key={r.id} to={`/games/${type}/${r.slug}`}>
+                        <Link key={r.id} to={`/games/${type}/${r.slug}/${r.id}`}>
                           {r.name}
                         </Link>
                       );
